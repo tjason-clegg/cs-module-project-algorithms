@@ -6,8 +6,10 @@ Returns: a List of integers
 
 def sliding_window_max(nums, k):
     rtn = []
+
     # Loop over the length of nums, subtract the k value, and add 1
     for i in range(len(nums) - k + 1):
+
         # Append the larget item from the index to k plus the index
         rtn.append(max(nums[i:k+i]))
     return rtn
